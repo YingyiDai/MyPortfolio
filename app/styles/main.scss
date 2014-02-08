@@ -1,0 +1,79 @@
+/*
+
+    Styles for My Portfolio http://daiy.co
+    Version: 1.0 [2014-02-07]
+    Author: Yingyi Dai
+
+    Inspired by Medium, Michelle Lee & Haraldur Thorleifsson's sites...
+    
+*/
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+/* Custom Type */
+$font-family-custom-sans-serif:  "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-custom-serif:       "bree-serif", Georgia, Times, serif !default;
+
+/* color */
+$pri-green: #57AD68;
+$light-grey: #b3b3b1;
+$middle-light-grey: #999997;
+$middle-grey: #666665;
+$type-black: #333332;
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    /* custom font */
+    font-family: $font-family-custom-serif;
+    -webkit-font-smoothing: antialiased;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-custom-serif;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.intro {
+    padding: 160px 0 120px 0;
+
+    h1 {
+        color: $pri-green;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: $middle-light-grey;
+        letter-spacing: .01rem;
+        word-spacing: .01rem;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 1.5;
+
+        margin-bottom: 20px;
+    }
+}
+
+/* item style */
+.rippay {
+    height: 200px;
+    background-color: #b3b1b6;
+}

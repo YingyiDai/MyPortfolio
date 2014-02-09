@@ -9,6 +9,7 @@
 */
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'compass/css3';
 
 /* Custom Type */
 $font-family-custom-sans-serif:  "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -20,6 +21,8 @@ $light-grey: #b3b3b1;
 $middle-light-grey: #999997;
 $middle-grey: #666665;
 $type-black: #333332;
+
+$half-alpha-white: rgba(255,255,255,0.5);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -42,6 +45,10 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $font-family-custom-serif;
+}
+
+.btn {
+    font-family: $font-family-custom-sans-serif;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -73,7 +80,143 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /* item style */
+.item {
+    height: 630px;
+    position: relative;
+    color: $half-alpha-white;
+
+    .detail {
+        text-align: center;
+        margin-left: -3px;
+        font-family: $font-family-custom-sans-serif;
+    }
+
+    .btn {
+        display: block;
+        padding: 12px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5;
+        border: 2px solid $half-alpha-white;
+        @include border-radius(6px);
+        
+        width: 140px;
+        margin: 0 auto;
+
+        @include transition(all .2s ease-in);
+
+        &:hover {
+            border: 2px solid #fff;
+            background-color: rgba(255, 255, 255, .3);
+        }
+    }
+}
+
 .rippay {
-    height: 200px;
-    background-color: #b3b1b6;
+    
+}
+
+.rim {
+    @include background(linear-gradient(#082554, #122f5c));
+    
+    .detail {
+        margin-top: 78px;
+
+        .detail-pic {
+            margin-bottom: 38px;
+        }
+        .detail-text {
+            margin-bottom: 14px;
+        }
+
+        .btn {
+            margin-top: 48px;
+        }
+    }
+}
+
+.idjeans {
+    background-color: #00aeef;
+
+    .detail {
+        margin-top: 78px;
+    }
+
+    .btn {
+        margin-top: 48px;
+    }
+}
+
+.cube {
+    background-color: #24c998;
+
+    .detail {
+        color: rgba(255, 255, 255, .8);
+
+        margin-top: 118px;
+        
+        .detail-pic {
+            margin-bottom: 36px;
+        }
+
+        .detail-text {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            margin-top: 48px;
+        }
+    }
+}
+
+.zhihu {
+    background-color: #0074ea;
+    background-image: url(../images/home/zhihu_bg.png);
+
+    .detail {
+        color: #fff;
+
+        margin-top: 118px;
+        
+        .detail-pic {
+            margin-bottom: 38px;
+        }
+
+        .detail-text {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            margin-top: 48px;
+        }
+    }
+}
+
+.edm {
+    background-color: #edf1f5;
+
+    .detail {
+        color: #62798c;
+
+        margin-top: 110px;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .detail-text {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            margin-top: 48px;
+            border: 2px solid rgba(98, 121, 140, .3);
+            color: #62798c;
+
+            &:hover {
+                border: 2px solid rgba(98, 121, 140, .5);
+                background-color: rgba(98, 121, 140, .3)
+            }
+        }
+    }
 }

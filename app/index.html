@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- bower:css -->
-
+        <link rel="stylesheet" type="text/css" href="bower_components/snapjs/snap.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -28,98 +28,155 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-        <div class="container">
-
-            <div class="intro">
-                <h1>Hi, I'm Yingyi Dai.</h1>
-                <p>A designer practicing product design.<br>
-                    Now I'm studying in Guangzhou and I love hand crafts, foods and some other beauty things.</p>
-                <p>Below are some of my works. Hope you enjoy~</p>   
-            </div>
-
-        </div>
-
-        <div class="rippay">
-            <div class="container"></div>
-        </div>
-
-        <div class="rim">
-            <div class="container">
-                <div class="item col-xs-12 col-sm-12">
-                    <div class="detail">
-                        <img class="detail-pic" src="images/home/rim_pic.png">
-                        <img class="detail-text" src="images/home/rim_text.png">
-                        <p>a game inspired by the movie, Pacific Rim.</p>
-                        <p>
-                            <a href="#" class="btn">view work</a>
-                        </p>
+        <div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-left">
+                <div>
+                    <h3>Snap.js</h3>
+                    <div class="demo-social">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Snap.js - A Library for creating beautiful mobile shelfs in Javascript" data-url="http://jakiestfu.github.com/Snap.js/" data-count="none" data-via="jakiestfu">Tweet</a>
+                        <a href="https://twitter.com/jakiestfu" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @jakiestfu</a>
+                        <iframe src="http://ghbtns.com/github-btn.html?user=jakiestfu&amp;repo=Snap.js&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+                    </div>
+                    <h4>Demos</h4>
+                    <ul>
+                        <li><a href="default.html">Default</a></li>
+                        <li><a href="noDrag.html">No Drag</a></li>
+                        <li><a href="dragElement.html">Drag Element</a></li>
+                        <li><a href="rightDisabled.html">Right Disabled</a></li>
+                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
+                        <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
+                        <li><a href="toggles.html">Toggles</a></li>
+                        <li><a href="classNames.html">Class Names</a></li>
+                        <li><a href="expand.html">Expanding</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="ratchet/template.html">Ratchet</a></li>
+                    </ul>
+                    <div>
+                        <p>The Default demo shows basic Snap.js functionality</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat ac leo ultrices blandit sed vel risus. Pellentesque facilisis blandit auctor. Maecenas vestibulum vulputate tincidunt. Mauris nec quam libero. Fusce eget ligula non leo varius condimentum quis ac elit. Donec id urna ut neque semper ultrices. Proin ut suscipit felis. Nullam neque felis, ullamcorper scelerisque volutpat vel, vehicula vehicula neque. Aenean scelerisque elit ac erat sagittis ullamcorper.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div id="content"  data-snap-ignore="true">
 
-        <div class="idjeans">
+            <div class="menu">
+                <a href=""><i class="icon-menu"></i></a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="icon-mail"></i></a>
+                <a href="#"><i class="icon-twitter"></i></a>
+                <a href="#"><i class="icon-weibo"></i></a>
+            </div>
+
             <div class="container">
-                <div class="item col-xs-12 col-sm-12">
-                    <div class="detail">
-                        <img class="detail-pic" src="images/home/idjeans.png">
-                        <p>
-                            <a href="#" class="btn">view work</a>
-                        </p>
-                    </div>
+
+                <div class="intro">
+                    <h1>Hi, I'm Yingyi Dai.</h1>
+                    <p>A designer practicing product design.<br>
+                        Now I'm studying in Guangzhou and I love hand crafts, foods and some other beauty things.</p>
+                    <p>Below are some of my works. Hope you enjoy~</p>   
                 </div>
-            </div>  
-        </div>
 
-        <div class="cube">
-            <div class="container">
-                <div class="item col-xs-12 col-sm-12">
-                    <div class="detail">
-                        <img class="detail-pic" src="images/home/cube_pic.png">
-                        <img class="detail-text" src="images/home/cube_text.png">
-                        <p>a iPad app for Rubic Cube learner.</p>
-                        <p>
-                            <a href="#" class="btn">view work</a>
-                        </p>
+            </div>
+
+            <div class="zhihu">
+                <div class="container">
+                    <div class="item col-xs-12 col-sm-12">
+                        <div class="detail">
+                            <img class="detail-pic" src="images/home/zhihu_pic.png">
+                            <img class="detail-text" src="images/home/zhihu_text.png">
+                            <p>I designed and improved Zhihu product features during my intern.</p>
+                            <p>
+                                <a href="#" class="btn">view work</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="zhihu">
-            <div class="container">
-                <div class="item col-xs-12 col-sm-12">
-                    <div class="detail">
-                        <img class="detail-pic" src="images/home/zhihu_pic.png">
-                        <img class="detail-text" src="images/home/zhihu_text.png">
-                        <p>I designed and improved Zhihu product features during my intern.</p>
-                        <p>
-                            <a href="#" class="btn">view work</a>
-                        </p>
+            <div class="rippay">
+                <div class="container"></div>
+            </div>
+
+            <div class="rim">
+                <div class="container">
+                    <div class="item col-xs-12 col-sm-12">
+                        <div class="detail">
+                            <img class="detail-pic" src="images/home/rim_pic.png">
+                            <img class="detail-text" src="images/home/rim_text.png">
+                            <p>a game inspired by the movie, Pacific Rim.</p>
+                            <p>
+                                <a href="#" class="btn">view work</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="edm">
-            <div class="container">
-                <div class="item col-xs-12 col-sm-12">
-                    <div class="detail">
-                        <img class="detail-pic" src="images/home/edm_pic.png">
-                        <h1>EDM & Promo</h1>
-                        <p>I'm in charge of Zhihu EDM and do lots of Promo design.</p>
-                        <p>
-                            <a href="#" class="btn">view work</a>
-                        </p>
+            <div class="idjeans">
+                <div class="container">
+                    <div class="item col-xs-12 col-sm-12">
+                        <div class="detail">
+                            <img class="detail-pic" src="images/home/idjeans.png">
+                            <p>
+                                <a href="#" class="btn">view work</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="cube">
+                <div class="container">
+                    <div class="item col-xs-12 col-sm-12">
+                        <div class="detail">
+                            <img class="detail-pic" src="images/home/cube_pic.png">
+                            <img class="detail-text" src="images/home/cube_text.png">
+                            <p>a iPad app for Rubic Cube learner.</p>
+                            <p>
+                                <a href="#" class="btn">view work</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="edm">
+                <div class="container">
+                    <div class="item col-xs-12 col-sm-12">
+                        <div class="detail">
+                            <img class="detail-pic" src="images/home/edm_pic.png">
+                            <h1>EDM & Promo</h1>
+                            <p>I designed Zhihu EDM and lots of Promo during my intern.</p>
+                            <p>
+                                <a href="#" class="btn">view work</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="job">
+                    <p>
+                        I interned at <a href="http://www.zhihu.com">Zhihu</a> for the past 6 months as a Product Designer and I'm currently looking for a full-time position in User Experience Design.
+                    </p>
+                    <p>I'm also looking for a <a href="http://dribbble.com/yellow10">Dribbble</a> invite, so glad if you can give me one.</p>
+                    <p>Feel free to contact me at <a href="#">hello@daiy.co</a> and download my <a href="#">resume</a>.</p>
+                    <p class="end-char">&#9784</p>
+                </div>
+            </div>
+        </div>
 
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/snapjs/snap.js"></script>
+        <script type="text/javascript">
+                     
+        </script>
         <!-- endbower -->
         <!-- endbuild -->
 

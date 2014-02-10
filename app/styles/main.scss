@@ -47,22 +47,92 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $font-family-custom-serif;
 }
 
+a {
+    @include transition(all .2s ease-in);
+}
+
 .btn {
     font-family: $font-family-custom-sans-serif;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
+/*fix snap content background */
+.snap-content {
+    background-color: #fff;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+}
+
+.icon-menu {
+    display: block;
+    width: 21px;
+    height: 19px;
+    background-image: url(../assets/menu-hover.png);
+    background-image: url(../assets/menu.png);
+    @include transition(all .2s ease-in);
+    &:hover {
+        background-image: url(../assets/menu-hover.png);
     }
 }
 
+.social {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.icon-mail, .icon-twitter, .icon-weibo {
+    float: left;
+    display: block;
+    @include transition(all .2s ease-in);
+    margin-left: 30px;
+}
+
+.icon-mail {
+    width: 28px;
+    height: 24px;
+    background-image: url(../assets/mail.png);
+    &:hover {
+        background-image: url(../assets/mail-hover.png);
+    }
+}
+
+.icon-twitter {
+    width: 30px;
+    height: 24px;
+    margin-left: 35px;
+    background-image: url(../assets/twitter.png);
+    &:hover {
+        background-image: url(../assets/twitter-hover.png);
+    }
+}
+
+.icon-weibo {
+    width: 30px;
+    height: 24px;
+    background-image: url(../assets/weibo.png);
+    &:hover {
+        background-image: url(../assets/weibo-hover.png);
+    }
+}
+
+
 .intro {
     padding: 160px 0 120px 0;
+}
+
+.job {
+    padding: 80px 0 40px 0;
+}
+
+.intro, .job {
 
     h1 {
-        color: $pri-green;
+        color: #0070cc;
         font-size: 60px;
         margin-bottom: 30px;
     }
@@ -77,17 +147,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
         margin-bottom: 20px;
     }
+
+    a {
+        font-weight: 500;
+    }
+}
+
+.end-char {
+    color: #ccc !important;
+    font-size: 60px !important;
+    text-align: center;
 }
 
 /* item style */
 .item {
-    height: 630px;
+    min-height: 630px;
     position: relative;
     color: $half-alpha-white;
 
     .detail {
         text-align: center;
-        margin-left: -3px;
         font-family: $font-family-custom-sans-serif;
     }
 
@@ -102,6 +181,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         
         width: 140px;
         margin: 0 auto;
+        margin-bottom: 38px;
 
         @include transition(all .2s ease-in);
 
@@ -172,6 +252,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .zhihu {
     background-color: #0074ea;
     background-image: url(../images/home/zhihu_bg.png);
+    background-position: 37px -10px;
 
     .detail {
         color: #fff;
@@ -188,6 +269,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
         .btn {
             margin-top: 48px;
+            border: 2px solid rgba(255, 255, 255, .7);
         }
     }
 }
@@ -198,7 +280,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     .detail {
         color: #62798c;
 
-        margin-top: 110px;
+        margin-top: 98px;
 
         h1 {
             font-size: 60px;
@@ -218,5 +300,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 background-color: rgba(98, 121, 140, .3)
             }
         }
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
     }
 }

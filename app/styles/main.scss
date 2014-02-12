@@ -21,6 +21,7 @@ $light-grey: #b3b3b1;
 $middle-light-grey: #999997;
 $middle-grey: #666665;
 $type-black: #333332;
+$bg-black: #191918;
 
 $half-alpha-white: rgba(255,255,255,0.5);
 
@@ -62,39 +63,46 @@ a {
 
 .menu {
     position: fixed;
-    top: 20px;
-    left: 20px;
     z-index: 10000;
+    cursor: pointer;
+    display: block;
+    background-color: rgba(255, 255, 255, .7);
+    @include transition(all .2s ease-in);
+
+    top: 12px;
+    left: 12px;
+
+    &:hover {
+        background-color: #fff;
+    }
 }
 
 .icon-menu {
     display: block;
+    margin: 12px;
     width: 21px;
     height: 19px;
-    background-image: url(../assets/menu-hover.png);
-    background-image: url(../assets/menu.png);
-    @include transition(all .2s ease-in);
-    &:hover {
-        background-image: url(../assets/menu-hover.png);
-    }
+    background-image: url(../assets/menu-blue.png);
 }
 
 .social {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 24px;
+    top: 26px;
 }
 
-.icon-mail, .icon-twitter, .icon-weibo {
+.icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu {
     float: left;
     display: block;
     @include transition(all .2s ease-in);
-    margin-left: 30px;
+    margin-left: 24px;
 }
 
 .icon-mail {
-    width: 28px;
-    height: 24px;
+    width: 19px;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 2px;
     background-image: url(../assets/mail.png);
     &:hover {
         background-image: url(../assets/mail-hover.png);
@@ -102,9 +110,8 @@ a {
 }
 
 .icon-twitter {
-    width: 30px;
-    height: 24px;
-    margin-left: 35px;
+    width: 22px;
+    height: 18px;
     background-image: url(../assets/twitter.png);
     &:hover {
         background-image: url(../assets/twitter-hover.png);
@@ -112,14 +119,23 @@ a {
 }
 
 .icon-weibo {
-    width: 30px;
-    height: 24px;
+    width: 22px;
+    height: 18px;
     background-image: url(../assets/weibo.png);
     &:hover {
         background-image: url(../assets/weibo-hover.png);
     }
 }
 
+.icon-zhihu {
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+    background-image: url(../assets/zhihu.png);
+    &:hover {
+        background-image: url(../assets/zhihu-hover.png);
+    }
+}
 
 .intro {
     padding: 160px 0 120px 0;
@@ -193,7 +209,23 @@ a {
 }
 
 .rippay {
-    
+    background-color: #a1e5e1;
+
+    .detail {
+        margin-top: 68px;
+        color: rgba(255,255,255, .8);
+
+        .detail-pic {
+            margin-bottom: 28px;
+        }
+        .detail-text {
+            margin-bottom: 14px;
+        }
+
+        .btn {
+            margin-top: 38px;
+        }
+    }
 }
 
 .rim {
@@ -280,13 +312,13 @@ a {
     .detail {
         color: #62798c;
 
-        margin-top: 98px;
+        margin-top: 92px;
 
         h1 {
             font-size: 60px;
         }
 
-        .detail-text {
+        .detail-pic {
             margin-bottom: 12px;
         }
 
@@ -302,6 +334,75 @@ a {
         }
     }
 }
+
+
+
+
+/* sidebar style */
+.snap-drawer {
+    background-color: $bg-black;
+    color: $light-grey;
+    font-family: $font-family-custom-sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 10px 44px 34px 34px;
+
+    a {
+        font-weight: 600;
+        color: $light-grey;
+        line-height: 38px;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        color: $middle-grey;
+    }
+
+    ul {
+        list-style: none;
+        -webkit-padding-start: 0px;
+        li {
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .close-snap {
+        position: relative;
+        top: 0;
+        left: 192px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .works {
+        margin-bottom: 28px;
+        margin-top: 14px;
+    }
+
+    .about {
+        
+    }
+
+    .social {
+        position: relative;
+        margin-top: -14px;
+        margin-left: 11px;
+
+        .icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu {
+            margin-left: 16px;
+        }
+    }
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

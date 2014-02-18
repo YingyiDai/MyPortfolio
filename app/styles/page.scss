@@ -15,8 +15,8 @@ $type-black: #333332;
 .page {
 	color: #666;
 	
-	word-spacing: .02rem;
-	letter-spacing: .01rem;
+	word-spacing: .1rem;
+	//letter-spacing: .01rem;
 	font-style: normal;
     font-weight: 200;
     font-size: 22px;
@@ -31,6 +31,12 @@ $type-black: #333332;
 
     p {
     	margin-bottom: 20px;
+    }
+
+    .center-text {
+    	text-align: center;
+		font-size: 48px;
+		padding: 40px 0 60px 0;
     }
 }
 
@@ -179,14 +185,13 @@ $type-black: #333332;
 			text-align: center;
 			margin-bottom: 30px;
 		}
-		margin-bottom: 100px;
+		margin-bottom: 120px;
 	}
 }
 
 
 /*zhihu page*/
 .zhihu {
-	position: relative;
 
 	.detail {
 		margin-top: 77px;
@@ -209,7 +214,7 @@ $type-black: #333332;
 	.share {
 		background-color: #eff6fa;
 
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}
 
 	.app {
@@ -237,5 +242,66 @@ $type-black: #333332;
 	.movie-img {
 		width: 100%;
 		margin: 0 0 20px 0; 
+	}
+
+	.concept {
+		img {
+			margin-bottom: 30px;
+		}
+	}
+
+	.art-work {
+		background-color: #0d1116;
+		color: #fff;
+		text-align: center;
+
+		h2 {
+			padding: 40px 0 60px 0;
+		}
+
+		img {
+			margin-bottom: 60px;
+		}
+
+		.img-warp p {
+			font-size: 14px;
+			font-weight: 200;
+			color: #666;
+			position: relative;
+			top: -56px;
+		}
+
+		.img-warp a {
+			font-size: 14px;
+			font-weight: 200;
+			color: #999;
+		}
+
+		.btn {
+			width: 220px;
+			margin-bottom: 80px;
+		}
+	}
+}
+
+
+/* cube page */
+.cube {
+	.detail {
+		margin-top: 88px;
+	}
+
+	.page {
+		background: #fff;
+	}
+
+	.about {
+		img {
+			margin-bottom: 20px;
+		}
+
+		.center-text {
+			color: #2dd4d7;
+		}
 	}
 }

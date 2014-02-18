@@ -16,7 +16,6 @@ $font-family-custom-sans-serif:  "museo-sans", "Helvetica Neue", Helvetica, Aria
 $font-family-custom-serif:       "bree-serif", Georgia, Times, serif !default;
 
 /* color */
-$pri-green: #57AD68;
 $light-grey: #b3b3b1;
 $middle-light-grey: #999997;
 $middle-grey: #666665;
@@ -39,7 +38,6 @@ body {
     -webkit-font-smoothing: antialiased;
 
     font-style: normal;
-    font-weight: 200;
     font-size: 18px;
     line-height: 1.4;
 }
@@ -56,6 +54,13 @@ a {
     font-family: $font-family-custom-sans-serif;
 }
 
+.img-warp {
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
+
 /*fix snap content background */
 .snap-content {
     background-color: #fff;
@@ -66,7 +71,7 @@ a {
     z-index: 10000;
     cursor: pointer;
     display: block;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .9);
     @include transition(all .2s ease-in);
 
     top: 12px;
@@ -82,7 +87,7 @@ a {
     margin: 12px;
     width: 21px;
     height: 19px;
-    background-image: url(../assets/menu-blue.png);
+    background-image: url('../images/assets/menu-blue.png');
 }
 
 .social {
@@ -103,27 +108,27 @@ a {
     height: 14px;
     margin-right: 5px;
     margin-top: 2px;
-    background-image: url(../assets/mail.png);
+    background-image: url('../images/assets/mail.png');
     &:hover {
-        background-image: url(../assets/mail-hover.png);
+        background-image: url('../images/assets/mail-hover.png');
     }
 }
 
 .icon-twitter {
     width: 22px;
     height: 18px;
-    background-image: url(../assets/twitter.png);
+    background-image: url('../images/assets/twitter.png');
     &:hover {
-        background-image: url(../assets/twitter-hover.png);
+        background-image: url('../images/assets/twitter-hover.png');
     }
 }
 
 .icon-weibo {
     width: 22px;
     height: 18px;
-    background-image: url(../assets/weibo.png);
+    background-image: url('../images/assets/weibo.png');
     &:hover {
-        background-image: url(../assets/weibo-hover.png);
+        background-image: url('../images/assets/weibo-hover.png');
     }
 }
 
@@ -131,9 +136,9 @@ a {
     width: 17px;
     height: 17px;
     margin-top: 1px;
-    background-image: url(../assets/zhihu.png);
+    background-image: url('../images/assets/zhihu.png');
     &:hover {
-        background-image: url(../assets/zhihu-hover.png);
+        background-image: url('../images/assets/zhihu-hover.png');
     }
 }
 
@@ -160,6 +165,7 @@ a {
         font-style: normal;
         font-size: 22px;
         line-height: 1.5;
+        font-weight: 200;
 
         margin-bottom: 20px;
     }
@@ -229,7 +235,8 @@ a {
 }
 
 .rim {
-    @include background(linear-gradient(#082554, #122f5c));
+    //@include background(linear-gradient(#082554, #122f5c));
+    background-color: #525966;
     
     .detail {
         margin-top: 78px;
@@ -248,7 +255,7 @@ a {
 }
 
 .idjeans {
-    background-color: #00aeef;
+    background-color: #00a7e5;
 
     .detail {
         margin-top: 78px;
@@ -260,7 +267,8 @@ a {
 }
 
 .cube {
-    background-color: #24c998;
+    //@include background(linear-gradient(#24c998, #24c9cc));
+    background-color: #2dd4d7;
 
     .detail {
         color: rgba(255, 255, 255, .8);
@@ -283,7 +291,7 @@ a {
 
 .zhihu {
     background-color: #0074ea;
-    background-image: url(../images/home/zhihu_bg.png);
+    background-image: url('../images/home/zhihu_bg.png');
     background-position: 37px -10px;
 
     .detail {
@@ -346,7 +354,7 @@ a {
     font-size: 14px;
     font-weight: 500;
 
-    padding: 10px 44px 34px 34px;
+    padding: 4px 44px 34px 28px;
 
     a {
         font-weight: 600;
@@ -376,15 +384,19 @@ a {
 
     .close-snap {
         position: relative;
-        top: 0;
+        top: 27px;
         left: 192px;
         width: 20px;
         cursor: pointer;
     }
 
+    .home {
+        margin-bottom: 28px;
+        display: block;
+    }
+
     .works {
         margin-bottom: 28px;
-        margin-top: 14px;
     }
 
     .about {

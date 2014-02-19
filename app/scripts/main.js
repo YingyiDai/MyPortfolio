@@ -1,7 +1,27 @@
-console.log('\'Allo \'Allo!');
 
 $(document).ready(function() {
 	$('.typekit-badge').hide();
+
+    $('a').click(function(){
+        var href = $(this).attr('href');
+        var new_window = $(this).attr('target');
+      
+        if (new_window === "_blank") {
+            window.open(href);
+            $('.typekit-badge').hide();
+        }
+        else {
+            // do animation
+            $('body').fadeOut(300, function(){
+                // go to link when animation completes
+                window.location=href;
+                $('.typekit-badge').hide();
+            })
+        }
+
+        // over ride browser following link when clicked
+        return false;
+    })
 
 	/*sidebar decs.*/
 	$('.works ul li a').mouseenter(function() {

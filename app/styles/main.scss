@@ -39,7 +39,7 @@ body {
 
     font-style: normal;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -178,8 +178,8 @@ a {
 
     p {
         color: $middle-light-grey;
-        letter-spacing: .01rem;
-        word-spacing: .01rem;
+        //letter-spacing: .01rem;
+        word-spacing: .1rem;
         font-style: normal;
         font-size: 22px;
         line-height: 1.5;
@@ -240,7 +240,7 @@ a {
         color: rgba(255,255,255, .8);
 
         .detail-pic {
-            margin-bottom: 28px;
+            
         }
         .detail-text {
             margin-bottom: 14px;

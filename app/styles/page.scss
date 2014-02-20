@@ -20,7 +20,7 @@ $type-black: #333332;
 	font-style: normal;
     font-weight: 200;
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.55;
 
     overflow: hidden;
     padding-top: 40px;
@@ -343,6 +343,7 @@ $type-black: #333332;
 			color: #ccc;
 			border: 2px solid #ddd;
 			width: 240px;
+			margin-bottom: 50px;
 		}
 
 		.disable {
@@ -359,5 +360,92 @@ $type-black: #333332;
 	}
 	.page {
 		background-color: #fff;
+		.center-text {
+			color: #00a7e5;
+		}
+	}
+
+	.custom {
+		a {
+			color: #666;
+			&:hover {
+				color: #444;
+			}
+		}
+	}
+
+	.research {
+		img {
+			margin: 10px 0 60px 0;
+		}
+	}
+
+	.ia {
+		img {
+			margin: 10px 0 60px 0;
+		}
+	}
+
+	.flow {
+		background-color: #00a7e5;
+		color: #fff;
+		padding: 30px;
+		img {
+			margin-bottom: 60px;
+		}
+
+		.last {
+			margin-bottom: 30px;
+		}
+	}
+
+	.screen {
+		img {
+			margin: 30px;
+		}
+
+		.btn {
+			color: #00a7e5;
+			border: 2px solid #b8d9e5;
+			width: 160px;
+			margin-bottom: 80px;
+			margin-top: 20px;
+
+			&:hover {
+				border: 2px solid #73c7e5;
+				background-color: rgba(0, 167, 229, .1);
+			}
+		}
+	}
+}
+
+
+
+
+/* rippay page*/
+.rippay {
+	.detail {
+		margin-top: 30px;
+	}
+	.page {
+		background-color: #fff;
+
+		.center-text {
+			color: #a1e5e1;
+		}
+	}
+
+	.ripple {
+		img {
+			margin-bottom: 30px;
+			margin-left: -14px;
+		}
+
+		a {
+			color: #a1e5e1;
+			&:hover {
+				color: #8fccc8;
+			}
+		}
 	}
 }

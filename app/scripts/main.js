@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-	$('.typekit-badge').hide();
 
     // $('a').click(function(){
     //     var href = $(this).attr('href');

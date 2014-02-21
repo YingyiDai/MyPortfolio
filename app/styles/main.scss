@@ -162,6 +162,18 @@ a {
 
 .intro {
     padding: 160px 0 120px 0;
+
+    h1 {
+        opacity: 0;
+    }
+
+    p {
+        opacity: 0;
+    }
+}
+
+.main {
+    opacity: 0;
 }
 
 .job {

@@ -13,6 +13,7 @@ $type-black: #333332;
 }
 
 .page {
+	opacity: 0;
 	color: #666;
 	
 	word-spacing: .1rem;
@@ -445,6 +446,30 @@ $type-black: #333332;
 			color: #a1e5e1;
 			&:hover {
 				color: #8fccc8;
+			}
+		}
+	}
+
+	.build-rippay {
+		img {
+			margin-bottom: 60px;
+		}
+	}
+
+	.interface {
+		img {
+			margin-bottom: 30px;
+		}
+		.btn {
+			color: #a1e5e1;
+			border: 2px solid #a1e5e1;
+			width: 160px;
+			margin-bottom: 80px;
+			margin-top: 20px;
+
+			&:hover {
+				border: 2px solid #a1e5e1;
+				background-color: rgba(161, 229, 225, .2);
 			}
 		}
 	}

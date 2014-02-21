@@ -23,6 +23,21 @@ $(document).ready(function() {
     //     return false;
     // })
 
+    /* index animation */
+    $(".intro h1").animate({
+        opacity: 1},
+        400, function() {
+
+        $(".intro p").animate({
+            opacity: 1},
+            400, function() {
+                $(".main").animate({opacity: 1}, 400)
+        });
+    });
+
+    /*page animation */
+    $(".page").animate({opacity: 1}, 400)
+
 	/*sidebar decs.*/
 	$('.works ul li a').mouseenter(function() {
 		$(this).siblings('p').stop().show(200);

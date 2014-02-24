@@ -42,6 +42,10 @@ body {
     line-height: 1.5;
 }
 
+.page {
+    font-family: $font-family-custom-serif;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $font-family-custom-serif;
 }
@@ -128,7 +132,7 @@ a {
     margin-top: 2px;
     background-image: url('../images/assets/mail.png');
     &:hover {
-        background-image: url('../images/assets/mail-hover.png');
+        //background-image: url('../images/assets/mail-hover.png');
     }
 }
 
@@ -137,7 +141,7 @@ a {
     height: 18px;
     background-image: url('../images/assets/twitter.png');
     &:hover {
-        background-image: url('../images/assets/twitter-hover.png');
+        //background-image: url('../images/assets/twitter-hover.png');
     }
 }
 
@@ -146,7 +150,7 @@ a {
     height: 18px;
     background-image: url('../images/assets/weibo.png');
     &:hover {
-        background-image: url('../images/assets/weibo-hover.png');
+        //background-image: url('../images/assets/weibo-hover.png');
     }
 }
 
@@ -156,7 +160,7 @@ a {
     margin-top: 1px;
     background-image: url('../images/assets/zhihu.png');
     &:hover {
-        background-image: url('../images/assets/zhihu-hover.png');
+        //background-image: url('../images/assets/zhihu-hover.png');
     }
 }
 
@@ -384,7 +388,7 @@ a {
     font-size: 14px;
     font-weight: 500;
 
-    padding: 4px 44px 34px 28px;
+    padding: 4px 44px 0px 0px;
 
     a {
         font-weight: 600;
@@ -399,15 +403,24 @@ a {
     p {
         font-size: 12px;
         color: $middle-grey;
+        padding-left: 28px;
     }
 
     ul {
         list-style: none;
         -webkit-padding-start: 0px;
         li {
+            padding-left: 23px;
+            border-left: 5px solid $bg-black;
+            
+            .active {
+                color: #fff;
+            }
 
             p {
                 display: none;
+                padding-left: 0px;
+                padding-bottom: 8px;
             }
         }
     }
@@ -415,7 +428,7 @@ a {
     .close-snap {
         position: relative;
         top: 27px;
-        left: 192px;
+        left: 220px;
         width: 20px;
         cursor: pointer;
     }

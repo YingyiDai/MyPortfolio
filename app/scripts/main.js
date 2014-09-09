@@ -30,6 +30,7 @@ $(document).ready(function() {
         $(".intro p").animate({
             opacity: 1},
             400, function() {
+                $(".intro ul").animate({opacity: 1}, 400)
                 $(".main").animate({opacity: 1}, 400)
         });
     });

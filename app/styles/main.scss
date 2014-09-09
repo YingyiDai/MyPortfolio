@@ -118,7 +118,7 @@ a {
     top: 26px;
 }
 
-.icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu {
+.icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu, .icon-wechat, .icon-dribbble {
     float: left;
     display: block;
     @include transition(all .2s ease-in);
@@ -126,39 +126,59 @@ a {
 }
 
 .icon-mail {
-    width: 19px;
-    height: 14px;
-    margin-right: 5px;
+    width: 22px;
+    height: 22px;
     margin-top: 2px;
-    background-image: url('../images/assets/mail.png');
+    background-image: url('../images/assets/mail.svg');
     &:hover {
         //background-image: url('../images/assets/mail-hover.png');
     }
 }
 
 .icon-twitter {
-    width: 22px;
-    height: 18px;
-    background-image: url('../images/assets/twitter.png');
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/assets/twitter.svg');
     &:hover {
         //background-image: url('../images/assets/twitter-hover.png');
     }
 }
 
 .icon-weibo {
-    width: 22px;
-    height: 18px;
-    background-image: url('../images/assets/weibo.png');
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/assets/weibo.svg');
     &:hover {
         //background-image: url('../images/assets/weibo-hover.png');
     }
 }
 
 .icon-zhihu {
-    width: 17px;
-    height: 17px;
+    margin-top: 2px;
+    margin-left: 1px;
+    width: 23px;
+    height: 23px;
+    background-image: url('../images/assets/zhihu.svg');
+    &:hover {
+        //background-image: url('../images/assets/zhihu-hover.png');
+    }
+}
+
+.icon-wechat {
+    width: 23px;
+    height: 23px;
     margin-top: 1px;
-    background-image: url('../images/assets/zhihu.png');
+    background-image: url('../images/assets/wechat.svg');
+    &:hover {
+        //background-image: url('../images/assets/zhihu-hover.png');
+    }
+}
+
+.icon-dribbble {
+    width: 23px;
+    height: 23px;
+    margin-top: 1px;
+    background-image: url('../images/assets/dribbble.svg');
     &:hover {
         //background-image: url('../images/assets/zhihu-hover.png');
     }
@@ -173,6 +193,33 @@ a {
 
     p {
         opacity: 0;
+    }
+
+    ul {
+        opacity: 0;
+        margin-top: 60px;
+    }
+
+    ul li a {
+        display: inline-block;
+        background-color: #c3c3c1;
+        width: 60px;
+        height: 60px;
+        @include border-radius(30px);
+
+        &:hover {
+            background-color: #a3a3a1;
+        }
+    }
+
+
+    .icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu, .icon-wechat, .icon-dribbble {
+        position: relative;
+        top:10px;
+        left: 10px;
+        margin: 0px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -451,8 +498,8 @@ a {
         margin-top: -14px;
         margin-left: 11px;
 
-        .icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu {
-            margin-left: 16px;
+        .icon-mail, .icon-twitter, .icon-weibo, .icon-zhihu, .icon-wechat, .icon-dribbble {
+            margin-left: 15px;
         }
     }
 }
